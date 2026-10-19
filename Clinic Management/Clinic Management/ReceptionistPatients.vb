@@ -8,9 +8,9 @@ Public Class ReceptionistPatients
     Public Event RegisterPatientRequested As EventHandler
 
     ' ---- Layout constants (must match the Designer)
-    Private Const RowHeight As Integer = 44
-    Private Const TableTop As Integer = 140
-    Private Const RowsTop As Integer = 70
+    Private Const RowHeight As Integer = 36
+    Private Const TableTop As Integer = 132
+    Private Const RowsTop As Integer = 58
     Private Const SearchPlaceholder As String = "Search name, patient ID, phone..."
 
     ' ---- Non-ASCII characters built at runtime so the source stays plain ASCII
@@ -40,10 +40,7 @@ Public Class ReceptionistPatients
     Private suppressSearch As Boolean = False
     Private _currentPage As Integer = 1
     Private Const PageSize As Integer = 10
-    Private pnlPagination As Panel
-    Private btnPrevPage As FButton
-    Private btnNextPage As FButton
-    Private lblPageInfo As Label
+    Private paginationCtrl As PaginationControl
 
     Public Sub New()
         InitializeComponent()
@@ -57,51 +54,19 @@ Public Class ReceptionistPatients
     End Sub
 
     Private Sub SetupPaginationControls()
-        If pnlPagination IsNot Nothing Then Return
-        pnlPagination = New Panel With {
-            .Height = 44,
+        If paginationCtrl IsNot Nothing Then Return
+        paginationCtrl = New PaginationControl With {
+            .Height = 34,
             .Dock = DockStyle.Bottom,
             .BackColor = Color.White
         }
+        AddHandler paginationCtrl.PageChanged, Sub(newPage)
+                                                  _currentPage = newPage
+                                                  ApplyFilters()
+                                              End Sub
 
-        btnPrevPage = New FButton With {
-            .Text = "‹ Previous",
-            .Size = New Size(90, 30),
-            .Location = New Point(20, 7),
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Bold)
-        }
-        UIThemeHelper.ApplySecondary(btnPrevPage)
-        AddHandler btnPrevPage.Click, Sub()
-                                          If _currentPage > 1 Then
-                                              _currentPage -= 1
-                                              ApplyFilters()
-                                          End If
-                                      End Sub
-
-        lblPageInfo = New Label With {
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Regular),
-            .ForeColor = Color.FromArgb(100, 120, 130),
-            .AutoSize = False,
-            .Size = New Size(240, 30),
-            .Location = New Point(125, 7),
-            .TextAlign = ContentAlignment.MiddleLeft
-        }
-
-        btnNextPage = New FButton With {
-            .Text = "Next ›",
-            .Size = New Size(90, 30),
-            .Location = New Point(380, 7),
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Bold)
-        }
-        UIThemeHelper.ApplySecondary(btnNextPage)
-        AddHandler btnNextPage.Click, Sub()
-                                          _currentPage += 1
-                                          ApplyFilters()
-                                      End Sub
-
-        pnlPagination.Controls.AddRange(New Control() {btnPrevPage, lblPageInfo, btnNextPage})
-        cardTable.Controls.Add(pnlPagination)
-        pnlPagination.BringToFront()
+        cardTable.Controls.Add(paginationCtrl)
+        paginationCtrl.BringToFront()
     End Sub
 
     Private Sub ReceptionistPatients_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -152,11 +117,9 @@ Public Class ReceptionistPatients
         If _currentPage > totalPages Then _currentPage = totalPages
         If _currentPage < 1 Then _currentPage = 1
 
-        If lblPageInfo IsNot Nothing Then
-            lblPageInfo.Text = $"Page {_currentPage} of {totalPages} ({filteredList.Count} patients)"
+        If paginationCtrl IsNot Nothing Then
+            paginationCtrl.SetPagination(_currentPage, totalPages, filteredList.Count, PageSize, "patients")
         End If
-        If btnPrevPage IsNot Nothing Then btnPrevPage.Enabled = (_currentPage > 1)
-        If btnNextPage IsNot Nothing Then btnNextPage.Enabled = (_currentPage < totalPages)
 
         Dim pagedItems = filteredList.Skip((_currentPage - 1) * PageSize).Take(PageSize).ToList()
         RenderRows(pagedItems)
@@ -182,18 +145,18 @@ Public Class ReceptionistPatients
         Dim n As Integer = items.Count
         lblEmpty.Visible = (n = 0)
         pnlRows.Visible = (n > 0)
+        pnlRows.AutoScroll = False
 
-        Dim availableH As Integer = Math.Max(Height - TableTop - 28 - RowsTop - 14, RowHeight)
-        pnlRows.Height = Math.Min(n * RowHeight, availableH)
-
-        ' leave room for the scrollbar only when the list actually scrolls
-        Dim rowWidth As Integer = If(n * RowHeight > pnlRows.Height, pnlRows.Width - SystemInformation.VerticalScrollBarWidth, pnlRows.Width)
+        pnlRows.Height = n * RowHeight
+        Dim rowWidth As Integer = pnlRows.Width
 
         For i As Integer = 0 To n - 1
             pnlRows.Controls.Add(CreateRow(items(i), i, rowWidth))
         Next
 
-        cardTable.Height = If(n = 0, 150, RowsTop + pnlRows.Height + 54)
+        cardTable.Top = TableTop
+        Dim pagerH As Integer = If(paginationCtrl IsNot Nothing, paginationCtrl.Height, 34)
+        cardTable.Height = If(n = 0, 150, RowsTop + pnlRows.Height + pagerH + 8)
         ResumeLayout(True)
     End Sub
 
@@ -240,7 +203,7 @@ Public Class ReceptionistPatients
             .Cursor = Cursors.Hand,
             .Font = f,
             .ForeColor = c,
-            .Location = New Point(x, 13),
+            .Location = New Point(x, 9),
             .Size = New Size(135, 18),
             .Text = text,
             .TextAlign = ContentAlignment.MiddleLeft

@@ -124,8 +124,8 @@ Public Class SqlitePrescriptionAccessRepository
                 Dim sql = "
                     SELECT r.id, r.prescription_id, COALESCE(p.prescription_code, 'RX-GENERAL'),
                            r.patient_id, COALESCE(pat.full_name, r.patient_id),
-                           r.requested_by_user_id, COALESCE(st.full_name, 'Staff Member'),
-                           r.doctor_id, COALESCE(doc.full_name, 'Attending Doctor'),
+                           r.requested_by_user_id, COALESCE(st.name, 'Staff Member'),
+                           r.doctor_id, COALESCE(doc.name, 'Attending Doctor'),
                            r.reason, r.status, r.requested_at, r.decided_at, r.decision_note,
                            r.access_type, r.expires_at, r.allow_print
                     FROM prescription_access_requests r

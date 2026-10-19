@@ -91,6 +91,9 @@
     <Compile Update="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PaginationControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="PrescriptionAccessReviewDialog.vb">
       <SubType>Form</SubType>
     </Compile>

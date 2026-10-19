@@ -1,168 +1,164 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\",
+  "WorkspaceRootPath": "D:\\Download\\ClinicManagements\\Clinic Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistconsultationdetail.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultationdetail.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistconsultation.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistclinicreports.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistclinicreports.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\cliniccalendarview.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\cliniccalendarview.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\clinicfilepath.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\clinicfilepath.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\clinicdata.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\clinicdata.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\loginform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\loginform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\databaseinitializer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\databaseinitializer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\databaseinitializer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\repositories\\sqliteauditrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\repositories\\sqliteauditrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\loginform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\loginform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\repositories\\sqliteappointmentrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\repositories\\sqliteappointmentrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\databaseservice.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\databaseservice.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\databaseservice.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\data\\securityhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\securityhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\securityhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\adminformsidebar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistconsultationdetail.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultationdetail.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistconsultation.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistconsultation.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistclinicreports.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistclinicreports.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\cliniccalendarview.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\cliniccalendarview.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorappointment.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorconsultationdirectory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorshell.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\clinicfilepath.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\clinicfilepath.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\clinicdata.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\clinicdata.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\repositories\\sqliteauditrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\repositories\\sqliteauditrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\data\\repositories\\sqliteappointmentrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\data\\repositories\\sqliteappointmentrepository.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorlaboratorydialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorlaboratorydialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorlaboratorydialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorconsultation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorsschedule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorsschedule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorsschedule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\receptionistbookappointmentdialog.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\repos\\Clinic Management\\Clinic Management\\Reports.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\sidebarhandler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\sidebarhandler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\sidebarhandler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctorpatients.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|c:\\users\\jared jake salas\\downloads\\clinic management-20261019t014701z-1-001\\clinic management\\clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|d:\\download\\clinicmanagements\\clinic management\\clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1B3D338D-03AA-408E-85ED-F6AFC3179DCC}|Clinic Management\\Clinic Management.vbproj|solutionrelative:clinic management\\doctordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -182,91 +178,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminFormSidebar.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\AdminFormSidebar.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
-              "RelativeToolTip": "Clinic Management\\AdminFormSidebar.vb",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAowMsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T15:49:56.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReceptionistDashboard.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
-              "RelativeToolTip": "Clinic Management\\ReceptionistDashboard.vb",
-              "ViewState": "AgIAANEDAAAAAAAAAAAowOEDAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T15:13:38.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReceptionistAppointment.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistAppointment.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
-              "RelativeToolTip": "Clinic Management\\ReceptionistAppointment.vb",
-              "ViewState": "AgIAAG8EAAAAAAAAAAAowI4EAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:20:37.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReceptionistConsultation.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
-              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.vb",
-              "ViewState": "AgIAAMEBAAAAAAAAAAAowOABAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T15:32:30.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminFormSidebar.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\AdminFormSidebar.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\AdminFormSidebar.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:24:29.473Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ReceptionistDashboard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
               "RelativeDocumentMoniker": "Clinic Management\\ReceptionistDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb [Design]",
               "RelativeToolTip": "Clinic Management\\ReceptionistDashboard.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-04T15:21:02.732Z",
@@ -274,228 +198,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReceptionistAppointment.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistAppointment.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ReceptionistAppointment.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T15:30:07.722Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReceptionistConsultationDetail.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultationDetail.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultationDetail.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultationDetail.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ReceptionistConsultationDetail.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:24:40.597Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReceptionistConsultation.resx",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.resx",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.resx",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.resx",
-              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-10-19T15:32:20.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReceptionistConsultation.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:24:42.851Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReceptionistClinicReports.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistClinicReports.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistClinicReports.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistClinicReports.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ReceptionistClinicReports.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:24:36.347Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ReceptionistBookAppointmentDialog.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistBookAppointmentDialog.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ReceptionistBookAppointmentDialog.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:20:56.418Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DoctorShell.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorShell.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorShell.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorShell.vb",
-              "RelativeToolTip": "Clinic Management\\DoctorShell.vb",
-              "ViewState": "AgIAACoAAAAAAAAAAAAcwD0AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T08:46:31.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DoctorConsultationDirectory.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorConsultationDirectory.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
-              "RelativeToolTip": "Clinic Management\\DoctorConsultationDirectory.vb",
-              "ViewState": "AgIAAOUBAAAAAAAAAAAowAQCAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T08:55:33.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DoctorAppointment.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorAppointment.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
-              "RelativeToolTip": "Clinic Management\\DoctorAppointment.vb",
-              "ViewState": "AgIAAMMCAAAAAAAAAAA5wOICAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T09:04:59.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClinicCalendarView.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ClinicCalendarView.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ClinicCalendarView.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ClinicCalendarView.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\ClinicCalendarView.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T14:55:56.094Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ClinicFilePath.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\ClinicFilePath.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\Data\\ClinicFilePath.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\ClinicFilePath.vb",
-              "RelativeToolTip": "Clinic Management\\Data\\ClinicFilePath.vb",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-18T16:47:18.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 1,
               "Title": "DatabaseInitializer.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\DatabaseInitializer.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\DatabaseInitializer.vb",
               "RelativeDocumentMoniker": "Clinic Management\\Data\\DatabaseInitializer.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\DatabaseInitializer.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\DatabaseInitializer.vb",
               "RelativeToolTip": "Clinic Management\\Data\\DatabaseInitializer.vb",
-              "ViewState": "AgIAANEAAAAAAAAAAAAAAOoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAEwF0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-05T16:09:22.942Z"
+              "WhenOpened": "2026-10-05T16:09:22.942Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DoctorAppointment.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorAppointment.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorAppointment.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\DoctorAppointment.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-03T03:21:03.474Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DoctorConsultationDirectory.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorConsultationDirectory.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\DoctorConsultationDirectory.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-19T08:55:19.367Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AdminDashboard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\AdminDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminDashboard.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\AdminDashboard.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:24:17.444Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DoctorShell.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorShell.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\DoctorShell.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorShell.vb [Design]",
-              "RelativeToolTip": "Clinic Management\\DoctorShell.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-04T15:21:10.279Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SqliteAuditRepository.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
-              "RelativeToolTip": "Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-05T16:10:45.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ClinicData.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ClinicData.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\ClinicData.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ClinicData.vb",
-              "RelativeToolTip": "Clinic Management\\ClinicData.vb",
+              "DocumentIndex": 4,
+              "Title": "SecurityHelper.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\SecurityHelper.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\Data\\SecurityHelper.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\SecurityHelper.vb",
+              "RelativeToolTip": "Clinic Management\\Data\\SecurityHelper.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-18T16:46:34.325Z"
+              "WhenOpened": "2026-10-05T16:10:33.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
+              "Title": "DatabaseService.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\DatabaseService.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\Data\\DatabaseService.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\DatabaseService.vb",
+              "RelativeToolTip": "Clinic Management\\Data\\DatabaseService.vb",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-05T16:10:36.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LoginForm.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\LoginForm.vb",
               "RelativeDocumentMoniker": "Clinic Management\\LoginForm.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\LoginForm.vb [Design]",
               "RelativeToolTip": "Clinic Management\\LoginForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-02T04:31:10.666Z",
@@ -503,35 +249,287 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 2,
               "Title": "LoginForm.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.Designer.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\LoginForm.Designer.vb",
               "RelativeDocumentMoniker": "Clinic Management\\LoginForm.Designer.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.Designer.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\LoginForm.Designer.vb",
               "RelativeToolTip": "Clinic Management\\LoginForm.Designer.vb",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAYwLkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAYwLsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-02T04:31:00.767Z"
+              "WhenOpened": "2026-10-02T04:31:00.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminFormSidebar.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\AdminFormSidebar.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\AdminFormSidebar.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:24:29.473Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReceptionistConsultation.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
+              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.vb",
+              "ViewState": "AgIAAMEBAAAAAAAAAAAowOABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T15:32:30.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReceptionistAppointment.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistAppointment.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
+              "RelativeToolTip": "Clinic Management\\ReceptionistAppointment.vb",
+              "ViewState": "AgIAAG8EAAAAAAAAAAAowI4EAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:20:37.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminFormSidebar.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\AdminFormSidebar.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminFormSidebar.vb",
+              "RelativeToolTip": "Clinic Management\\AdminFormSidebar.vb",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAowMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T15:49:56.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReceptionistDashboard.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistDashboard.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistDashboard.vb",
+              "RelativeToolTip": "Clinic Management\\ReceptionistDashboard.vb",
+              "ViewState": "AgIAANEDAAAAAAAAAAAowOEDAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T15:13:38.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReceptionistAppointment.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistAppointment.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistAppointment.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ReceptionistAppointment.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T15:30:07.722Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReceptionistConsultationDetail.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultationDetail.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultationDetail.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultationDetail.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ReceptionistConsultationDetail.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:24:40.597Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReceptionistConsultation.resx",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.resx",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.resx",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.resx",
+              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-10-19T15:32:20.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReceptionistConsultation.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistConsultation.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistConsultation.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ReceptionistConsultation.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:24:42.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReceptionistClinicReports.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistClinicReports.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistClinicReports.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistClinicReports.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ReceptionistClinicReports.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:24:36.347Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReceptionistBookAppointmentDialog.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ReceptionistBookAppointmentDialog.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ReceptionistBookAppointmentDialog.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:20:56.418Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DoctorShell.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorShell.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorShell.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorShell.vb",
+              "RelativeToolTip": "Clinic Management\\DoctorShell.vb",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwD0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T08:46:31.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DoctorConsultationDirectory.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorConsultationDirectory.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
+              "RelativeToolTip": "Clinic Management\\DoctorConsultationDirectory.vb",
+              "ViewState": "AgIAAOUBAAAAAAAAAAAowAQCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T08:55:33.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DoctorAppointment.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorAppointment.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
+              "RelativeToolTip": "Clinic Management\\DoctorAppointment.vb",
+              "ViewState": "AgIAAMMCAAAAAAAAAAA5wOICAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T09:04:59.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClinicCalendarView.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ClinicCalendarView.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ClinicCalendarView.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ClinicCalendarView.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\ClinicCalendarView.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T14:55:56.094Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "LoginForm.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\LoginForm.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\LoginForm.vb",
-              "RelativeToolTip": "Clinic Management\\LoginForm.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAlAAAAAAAAAA==",
+              "Title": "ClinicFilePath.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\ClinicFilePath.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\Data\\ClinicFilePath.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\ClinicFilePath.vb",
+              "RelativeToolTip": "Clinic Management\\Data\\ClinicFilePath.vb",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-05T16:14:20.385Z"
+              "WhenOpened": "2026-10-18T16:47:18.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DoctorAppointment.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorAppointment.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorAppointment.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorAppointment.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\DoctorAppointment.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-03T03:21:03.474Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DoctorConsultationDirectory.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorConsultationDirectory.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultationDirectory.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\DoctorConsultationDirectory.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-19T08:55:19.367Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminDashboard.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\AdminDashboard.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminDashboard.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\AdminDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:24:17.444Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DoctorShell.vb [Design]",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorShell.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\DoctorShell.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorShell.vb [Design]",
+              "RelativeToolTip": "Clinic Management\\DoctorShell.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-04T15:21:10.279Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "SqliteAuditRepository.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
+              "RelativeToolTip": "Clinic Management\\Data\\Repositories\\SqliteAuditRepository.vb",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-05T16:10:45.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ClinicData.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ClinicData.vb",
+              "RelativeDocumentMoniker": "Clinic Management\\ClinicData.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ClinicData.vb",
+              "RelativeToolTip": "Clinic Management\\ClinicData.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-18T16:46:34.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "SqliteAppointmentRepository.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
               "RelativeDocumentMoniker": "Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
               "RelativeToolTip": "Clinic Management\\Data\\Repositories\\SqliteAppointmentRepository.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -539,35 +537,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DatabaseService.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\DatabaseService.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\Data\\DatabaseService.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\DatabaseService.vb",
-              "RelativeToolTip": "Clinic Management\\Data\\DatabaseService.vb",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-05T16:10:36.273Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "SecurityHelper.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\SecurityHelper.vb",
-              "RelativeDocumentMoniker": "Clinic Management\\Data\\SecurityHelper.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Data\\SecurityHelper.vb",
-              "RelativeToolTip": "Clinic Management\\Data\\SecurityHelper.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-05T16:10:33.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
               "Title": "AdminDashboard.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
               "RelativeDocumentMoniker": "Clinic Management\\AdminDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\AdminDashboard.vb",
               "RelativeToolTip": "Clinic Management\\AdminDashboard.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -575,11 +549,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "DoctorLaboratoryDialog.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorLaboratoryDialog.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorLaboratoryDialog.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorLaboratoryDialog.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorLaboratoryDialog.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorLaboratoryDialog.vb [Design]",
               "RelativeToolTip": "Clinic Management\\DoctorLaboratoryDialog.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-04T15:22:58.969Z",
@@ -587,11 +561,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "DoctorConsultation.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultation.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultation.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorConsultation.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorConsultation.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorConsultation.vb [Design]",
               "RelativeToolTip": "Clinic Management\\DoctorConsultation.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-04T15:22:56.25Z",
@@ -599,11 +573,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "DoctorsSchedule.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorsSchedule.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorsSchedule.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorsSchedule.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorsSchedule.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorsSchedule.vb [Design]",
               "RelativeToolTip": "Clinic Management\\DoctorsSchedule.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-04T15:21:06.982Z",
@@ -611,11 +585,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "DoctorDashboard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorDashboard.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorDashboard.vb [Design]",
               "RelativeToolTip": "Clinic Management\\DoctorDashboard.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-01T10:37:13.62Z",
@@ -623,11 +597,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "ReceptionistBookAppointmentDialog.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
               "RelativeDocumentMoniker": "Clinic Management\\ReceptionistBookAppointmentDialog.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\ReceptionistBookAppointmentDialog.vb",
               "RelativeToolTip": "Clinic Management\\ReceptionistBookAppointmentDialog.vb",
               "ViewState": "AgIAAG4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -635,39 +609,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Reports.Designer.vb",
               "DocumentMoniker": "D:\\repos\\Clinic Management\\Clinic Management\\Reports.Designer.vb",
+              "RelativeDocumentMoniker": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\Reports.Designer.vb",
               "ToolTip": "D:\\repos\\Clinic Management\\Clinic Management\\Reports.Designer.vb",
+              "RelativeToolTip": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\Reports.Designer.vb",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-03T02:58:38.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "Reports.vb [Design]",
               "DocumentMoniker": "D:\\repos\\Clinic Management\\Clinic Management\\Reports.vb",
+              "RelativeDocumentMoniker": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\Reports.vb",
               "ToolTip": "D:\\repos\\Clinic Management\\Clinic Management\\Reports.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\Reports.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-03T02:58:08.359Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "LaboratoryDialog.vb",
               "DocumentMoniker": "D:\\repos\\Clinic Management\\Clinic Management\\LaboratoryDialog.vb",
+              "RelativeDocumentMoniker": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\LaboratoryDialog.vb",
               "ToolTip": "D:\\repos\\Clinic Management\\Clinic Management\\LaboratoryDialog.vb",
+              "RelativeToolTip": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\LaboratoryDialog.vb",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-03T02:57:12.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "SidebarHandler.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\SidebarHandler.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\SidebarHandler.vb",
               "RelativeDocumentMoniker": "Clinic Management\\SidebarHandler.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\SidebarHandler.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\SidebarHandler.vb",
               "RelativeToolTip": "Clinic Management\\SidebarHandler.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -675,21 +655,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "PatientInformation.vb [Design]",
               "DocumentMoniker": "D:\\repos\\Clinic Management\\Clinic Management\\PatientInformation.vb",
+              "RelativeDocumentMoniker": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\PatientInformation.vb",
               "ToolTip": "D:\\repos\\Clinic Management\\Clinic Management\\PatientInformation.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\repos\\Clinic Management\\Clinic Management\\PatientInformation.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-02T04:31:14.629Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "DoctorPatients.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorPatients.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorPatients.vb [Design]",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorPatients.vb [Design]",
               "RelativeToolTip": "Clinic Management\\DoctorPatients.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-02T04:31:11.748Z",
@@ -697,11 +679,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "DoctorPatients.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorPatients.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorPatients.vb",
               "RelativeToolTip": "Clinic Management\\DoctorPatients.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -709,25 +691,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "DoctorDashboard.vb",
-              "DocumentMoniker": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
+              "DocumentMoniker": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
               "RelativeDocumentMoniker": "Clinic Management\\DoctorDashboard.vb",
-              "ToolTip": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
+              "ToolTip": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\DoctorDashboard.vb",
               "RelativeToolTip": "Clinic Management\\DoctorDashboard.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-10-01T10:37:02.576Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1129,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

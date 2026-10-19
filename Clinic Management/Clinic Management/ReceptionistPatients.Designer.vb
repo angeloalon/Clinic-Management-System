@@ -276,7 +276,7 @@ Partial Class ReceptionistPatients
         lblCardTitle.BackColor = Color.Transparent
         lblCardTitle.Font = New Font("Segoe UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblCardTitle.ForeColor = Color.FromArgb(30, 45, 55)
-        lblCardTitle.Location = New Point(19, 16)
+        lblCardTitle.Location = New Point(19, 12)
         lblCardTitle.Name = "lblCardTitle"
         lblCardTitle.TabIndex = 9
         lblCardTitle.Text = "Patients"
@@ -287,7 +287,7 @@ Partial Class ReceptionistPatients
         lblColPatient.BackColor = Color.Transparent
         lblColPatient.Font = New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblColPatient.ForeColor = Color.FromArgb(120, 135, 145)
-        lblColPatient.Location = New Point(20, 54)
+        lblColPatient.Location = New Point(20, 38)
         lblColPatient.Name = "lblColPatient"
         lblColPatient.TabIndex = 10
         lblColPatient.Text = "Patient"
@@ -298,7 +298,7 @@ Partial Class ReceptionistPatients
         lblColPatientId.BackColor = Color.Transparent
         lblColPatientId.Font = New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblColPatientId.ForeColor = Color.FromArgb(120, 135, 145)
-        lblColPatientId.Location = New Point(180, 54)
+        lblColPatientId.Location = New Point(180, 38)
         lblColPatientId.Name = "lblColPatientId"
         lblColPatientId.TabIndex = 11
         lblColPatientId.Text = "Patient ID"
@@ -309,7 +309,7 @@ Partial Class ReceptionistPatients
         lblColAgeSex.BackColor = Color.Transparent
         lblColAgeSex.Font = New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblColAgeSex.ForeColor = Color.FromArgb(120, 135, 145)
-        lblColAgeSex.Location = New Point(330, 54)
+        lblColAgeSex.Location = New Point(330, 38)
         lblColAgeSex.Name = "lblColAgeSex"
         lblColAgeSex.TabIndex = 12
         lblColAgeSex.Text = "Age / sex"
@@ -320,7 +320,7 @@ Partial Class ReceptionistPatients
         lblColContact.BackColor = Color.Transparent
         lblColContact.Font = New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblColContact.ForeColor = Color.FromArgb(120, 135, 145)
-        lblColContact.Location = New Point(480, 54)
+        lblColContact.Location = New Point(480, 38)
         lblColContact.Name = "lblColContact"
         lblColContact.TabIndex = 13
         lblColContact.Text = "Contact"
@@ -331,7 +331,7 @@ Partial Class ReceptionistPatients
         lblColLastVisit.BackColor = Color.Transparent
         lblColLastVisit.Font = New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblColLastVisit.ForeColor = Color.FromArgb(120, 135, 145)
-        lblColLastVisit.Location = New Point(620, 54)
+        lblColLastVisit.Location = New Point(620, 38)
         lblColLastVisit.Name = "lblColLastVisit"
         lblColLastVisit.TabIndex = 14
         lblColLastVisit.Text = "Last visit"
@@ -339,7 +339,7 @@ Partial Class ReceptionistPatients
         ' pnlHeaderDivider
         ' 
         pnlHeaderDivider.BackColor = Color.FromArgb(242, 244, 247)
-        pnlHeaderDivider.Location = New Point(20, 75)
+        pnlHeaderDivider.Location = New Point(20, 56)
         pnlHeaderDivider.Name = "pnlHeaderDivider"
         pnlHeaderDivider.Size = New Size(736, 1)
         pnlHeaderDivider.TabIndex = 15
@@ -350,7 +350,7 @@ Partial Class ReceptionistPatients
         lblEmpty.BackColor = Color.Transparent
         lblEmpty.Font = New Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblEmpty.ForeColor = Color.FromArgb(140, 155, 165)
-        lblEmpty.Location = New Point(19, 100)
+        lblEmpty.Location = New Point(19, 80)
         lblEmpty.Name = "lblEmpty"
         lblEmpty.TabIndex = 16
         lblEmpty.Text = "No patients match your search."
@@ -358,11 +358,11 @@ Partial Class ReceptionistPatients
         ' 
         ' pnlRows
         ' 
-        pnlRows.AutoScroll = True
+        pnlRows.AutoScroll = False
         pnlRows.BackColor = Color.White
-        pnlRows.Location = New Point(20, 80)
+        pnlRows.Location = New Point(20, 58)
         pnlRows.Name = "pnlRows"
-        pnlRows.Size = New Size(736, 210)
+        pnlRows.Size = New Size(736, 360)
         pnlRows.TabIndex = 17
         ' 
         ' cardTable

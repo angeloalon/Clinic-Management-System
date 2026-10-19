@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Clinic Management.vbproj": {}
+    "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Clinic Management.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Clinic Management.vbproj": {
+    "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Clinic Management.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Clinic Management.vbproj",
+        "projectUniqueName": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Clinic Management.vbproj",
         "projectName": "Clinic Management",
-        "projectPath": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\Clinic Management.vbproj",
-        "packagesPath": "C:\\Users\\Jared Jake Salas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\Clinic Management\\obj\\",
+        "projectPath": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\Clinic Management.vbproj",
+        "packagesPath": "C:\\Users\\Angelo\\.nuget\\packages\\",
+        "outputPath": "D:\\Download\\ClinicManagements\\Clinic Management\\Clinic Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jared Jake Salas\\Downloads\\Clinic Management-20261019T014701Z-1-001\\Clinic Management\\NuGet.Config",
-          "C:\\Users\\Jared Jake Salas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Download\\ClinicManagements\\Clinic Management\\NuGet.Config",
+          "C:\\Users\\Angelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.316/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

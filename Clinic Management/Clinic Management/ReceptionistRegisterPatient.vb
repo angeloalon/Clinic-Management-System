@@ -413,7 +413,9 @@ Public Class ReceptionistRegisterPatient
         Dim host As Panel = MakeHost(caption, gap, 34, wrap)
 
         Dim cbo As New ComboBox() With {
-            .DropDownStyle = ComboBoxStyle.DropDownList,
+            .DropDownStyle = ComboBoxStyle.DropDown,
+            .AutoCompleteMode = AutoCompleteMode.SuggestAppend,
+            .AutoCompleteSource = AutoCompleteSource.ListItems,
             .Font = FBody,
             .BackColor = Color.White,
             .ForeColor = Ink,
@@ -593,8 +595,12 @@ Public Class ReceptionistRegisterPatient
               "Email address is not valid (or leave it blank).")
         check(txtStreet, street.Length > 0, "Street address is required.")
         check(txtBarangay, barangay.Length > 0, "Barangay is required.")
-        check(cboProvince, cboProvince.SelectedItem IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(cboProvince.SelectedItem.ToString()), "Please select a province.")
-        check(cboCity, cboCity.SelectedItem IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(cboCity.SelectedItem.ToString()), "Please select a city/municipality.")
+
+        Dim provinceStr = If(cboProvince.SelectedItem IsNot Nothing, cboProvince.SelectedItem.ToString(), cboProvince.Text.Trim())
+        Dim cityStr = If(cboCity.SelectedItem IsNot Nothing, cboCity.SelectedItem.ToString(), cboCity.Text.Trim())
+
+        check(cboProvince, Not String.IsNullOrWhiteSpace(provinceStr), "Please select or enter a province.")
+        check(cboCity, Not String.IsNullOrWhiteSpace(cityStr), "Please select or enter a city/municipality.")
         check(txtConditions, conditions.Length > 0, "Known medical conditions: list them or write 'None'.")
         check(txtAllergies, allergies.Length > 0, "Known drug allergies: list them or write 'No known drug allergies'.")
 
@@ -605,9 +611,6 @@ Public Class ReceptionistRegisterPatient
                             "Register patient", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-
-        Dim provinceStr = If(cboProvince.SelectedItem IsNot Nothing, cboProvince.SelectedItem.ToString(), "")
-        Dim cityStr = If(cboCity.SelectedItem IsNot Nothing, cboCity.SelectedItem.ToString(), "")
 
         ' Normalize names and addresses to Proper Case
         firstName = ValidationHelper.NormalizeProperCase(firstName)

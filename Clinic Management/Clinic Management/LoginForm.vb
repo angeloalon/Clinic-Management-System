@@ -6,9 +6,6 @@ Public Class LoginForm
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CenterLoginCard()
-        If txtEmail.Text.Trim() = "" Then
-            txtEmail.Text = "elena.cruz@uccclinic.edu.ph"
-        End If
 
         ' Quick background check if configured as network client
         If ClinicFilePath.IsNetworkPath() Then
@@ -175,14 +172,7 @@ Public Class LoginForm
                 Return
             End If
         Else
-            ' Fallback inference for standard seeded demo emails
-            If email.Contains("rosa") OrElse email.Contains("admin") Then
-                actualRole = "Administrator" : accountName = "Rosa Dela Cruz"
-            ElseIf email.Contains("diana") OrElse email.Contains("ana") OrElse email.Contains("receptionist") Then
-                actualRole = "Receptionist" : accountName = "Ms. Diana Dina"
-            ElseIf email.Contains("elena") OrElse email.Contains("marco") OrElse email.Contains("paolo") OrElse email.Contains("doctor") Then
-                actualRole = "Doctor" : accountName = "Dr. Elena Cruz"
-            End If
+
         End If
 
         ' Validate password
@@ -247,4 +237,7 @@ Public Class LoginForm
         txtPassword.Focus()
     End Sub
 
+    Private Sub cardEmailBox_Click(sender As Object, e As EventArgs) Handles cardEmailBox.Click
+
+    End Sub
 End Class

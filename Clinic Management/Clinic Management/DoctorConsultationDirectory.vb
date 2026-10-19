@@ -28,10 +28,7 @@ Public Class DoctorConsultationDirectory
 
     Private _currentPage As Integer = 1
     Private Const PageSize As Integer = 10
-    Private pnlPagination As Panel
-    Private lblPageInfo As Label
-    Private btnPrevPage As FButton
-    Private btnNextPage As FButton
+    Private paginationCtrl As PaginationControl
 
     Public Sub New()
         InitializeComponent()
@@ -302,19 +299,16 @@ Public Class DoctorConsultationDirectory
         pnlRows.Height = Math.Max(y, 1)
 
         EnsurePaginationControls()
-        Dim startItem = If(totalCount = 0, 0, (_currentPage - 1) * PageSize + 1)
-        Dim endItem = Math.Min(_currentPage * PageSize, totalCount)
-        lblPageInfo.Text = $"Showing {startItem}-{endItem} of {totalCount} consultations  •  Page {_currentPage} of {totalPages}"
-        btnPrevPage.Enabled = (_currentPage > 1)
-        btnNextPage.Enabled = (_currentPage < totalPages)
+        If paginationCtrl IsNot Nothing Then
+            paginationCtrl.Top = pnlRows.Bottom + 8
+            paginationCtrl.Width = pnlRows.Width
+            paginationCtrl.SetPagination(_currentPage, totalPages, totalCount, PageSize, "consultations")
+        End If
 
-        pnlPagination.Top = pnlRows.Bottom + 8
-        pnlPagination.Width = pnlRows.Width
-        cardConsultations.Height = Math.Max(320, pnlPagination.Bottom + 16)
+        cardConsultations.Height = Math.Max(320, If(paginationCtrl IsNot Nothing, paginationCtrl.Bottom + 16, pnlRows.Bottom + 16))
 
         lblEmpty.Text = "No consultations match your search."
         lblEmpty.Visible = (totalCount = 0)
-        pnlPagination.Visible = (totalCount > 0)
 
         pnlRows.ResumeLayout()
         ResumeLayout()
@@ -330,55 +324,21 @@ Public Class DoctorConsultationDirectory
     End Sub
 
     Private Sub EnsurePaginationControls()
-        If pnlPagination IsNot Nothing Then Return
+        If paginationCtrl IsNot Nothing Then Return
 
-        pnlPagination = New Panel With {
+        paginationCtrl = New PaginationControl With {
             .Location = New Point(20, pnlRows.Bottom + 8),
-            .Size = New Size(pnlRows.Width, 36),
+            .Size = New Size(pnlRows.Width, 38),
             .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right,
             .BackColor = Color.White
         }
 
-        lblPageInfo = New Label With {
-            .AutoSize = True,
-            .Location = New Point(4, 9),
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Regular),
-            .ForeColor = Color.FromArgb(115, 138, 148),
-            .BackColor = Color.Transparent
-        }
-        pnlPagination.Controls.Add(lblPageInfo)
+        AddHandler paginationCtrl.PageChanged, Sub(newPage)
+                                                  _currentPage = newPage
+                                                  RefreshRows(True)
+                                              End Sub
 
-        btnNextPage = New FButton With {
-            .Text = "Next ›",
-            .Size = New Size(76, 30),
-            .Anchor = AnchorStyles.Top Or AnchorStyles.Right,
-            .Location = New Point(pnlPagination.Width - 76, 3),
-            .Cursor = Cursors.Hand,
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Bold)
-        }
-        UIThemeHelper.ApplySecondary(btnNextPage)
-        AddHandler btnNextPage.Click, Sub()
-                                          _currentPage += 1
-                                          RefreshRows(True)
-                                      End Sub
-        pnlPagination.Controls.Add(btnNextPage)
-
-        btnPrevPage = New FButton With {
-            .Text = "‹ Prev",
-            .Size = New Size(76, 30),
-            .Anchor = AnchorStyles.Top Or AnchorStyles.Right,
-            .Location = New Point(pnlPagination.Width - 160, 3),
-            .Cursor = Cursors.Hand,
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Bold)
-        }
-        UIThemeHelper.ApplySecondary(btnPrevPage)
-        AddHandler btnPrevPage.Click, Sub()
-                                          _currentPage -= 1
-                                          RefreshRows(True)
-                                      End Sub
-        pnlPagination.Controls.Add(btnPrevPage)
-
-        cardConsultations.Controls.Add(pnlPagination)
+        cardConsultations.Controls.Add(paginationCtrl)
     End Sub
 
     Private Function BuildRow(appt As AppointmentItem, y As Integer) As Panel

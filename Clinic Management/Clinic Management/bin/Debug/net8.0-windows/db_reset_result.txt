@@ -1,0 +1,39 @@
+=== APPLICATION DATA RESET RESULT ===
+Success: True
+Database: D:\Download\ClinicManagements\Clinic Management\Clinic Management\Data\clinic.db
+Backup File: D:\Download\ClinicManagements\Clinic Management\Clinic Management\Data\clinic_backup_20261020_014643.db
+Admin Account Preserved: True
+Admin ID: 6
+Admin Email: rosa.delacruz@uccclinic.edu.ph
+Admin Name: Rosa Dela Cruz
+Admin Role: Administrator
+Integrity Check: ok
+FK Check Passed: True
+--- Pre-Reset Table Counts ---
+  appointments: 49 rows
+  audit_logs: 452 rows
+  clinic_settings: 1 rows
+  consultation_access_requests: 8 rows
+  consultations: 26 rows
+  doctor_availability: 39 rows
+  lab_requests: 2 rows
+  patients: 11 rows
+  prescription_access_requests: 0 rows
+  prescriptions: 0 rows
+  psgc_geographic: 93 rows
+  schedule_slots: 75 rows
+  staff_accounts: 14 rows
+--- Post-Reset Table Counts ---
+  appointments: 0 rows
+  audit_logs: 0 rows
+  clinic_settings: 0 rows
+  consultation_access_requests: 0 rows
+  consultations: 0 rows
+  doctor_availability: 0 rows
+  lab_requests: 0 rows
+  patients: 0 rows
+  prescription_access_requests: 0 rows
+  prescriptions: 0 rows
+  psgc_geographic: 0 rows
+  schedule_slots: 0 rows
+  staff_accounts: 1 rows

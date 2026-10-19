@@ -4,6 +4,7 @@ Imports Ferrando.UI.WinForms.Controles
 Public Class DoctorDashboard
     Private sidebarHandler As SidebarHandler
     Private btnAccessRequestsBadge As FButton
+    Private lblEmptyAppts As Label
 
     Private Sub DoctorDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         sidebarHandler = New SidebarHandler(btnDashboard, btnPatients, btnAppointment,
@@ -125,10 +126,6 @@ Public Class DoctorDashboard
                         End Function
 
         Dim todayAppts = ClinicData.Appointments.Where(Function(a) a.MatchesDate(DateTime.Today) AndAlso docFilter(a.DoctorName)).OrderBy(Function(a) a.Minutes).ToList()
-        If todayAppts.Count = 0 AndAlso (Not CurrentUser.IsAuthenticated OrElse currentDoc.IndexOf("Cruz", StringComparison.OrdinalIgnoreCase) >= 0) Then
-            ' Legacy mock fallback strictly for unauthenticated / default seed demo
-            todayAppts = ClinicData.Appointments.Where(Function(a) a.Day = 25 AndAlso docFilter(a.DoctorName)).OrderBy(Function(a) a.Minutes).ToList()
-        End If
 
         Dim totalCount = todayAppts.Count
         Dim completedCount = todayAppts.Where(Function(a) a.Status = "Completed").Count()
@@ -229,6 +226,21 @@ Public Class DoctorDashboard
         Dim types = {lblRow1Type, lblRow2Type, lblRow3Type}
         Dim docs = {lblRow1Doctor, lblRow2Doctor, lblRow3Doctor}
         Dim badges = {btnBadgeCompleted, btnBadgePending1, btnBadgePending2}
+
+        If lblEmptyAppts Is Nothing Then
+            lblEmptyAppts = New Label With {
+                .Text = "No appointments scheduled for today.",
+                .Font = New Font("Segoe UI", 9.5F, FontStyle.Regular),
+                .ForeColor = Color.FromArgb(140, 155, 165),
+                .TextAlign = ContentAlignment.MiddleCenter,
+                .Size = New Size(cardApptsList.Width - 32, 60),
+                .Location = New Point(16, 90),
+                .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right,
+                .Visible = False
+            }
+            cardApptsList.Controls.Add(lblEmptyAppts)
+        End If
+        lblEmptyAppts.Visible = (appts.Count = 0)
 
         For i As Integer = 0 To 2
             Dim hasData As Boolean = i < appts.Count

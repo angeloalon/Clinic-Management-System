@@ -1,4 +1,5 @@
 Imports System.Drawing
+Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
 Imports Ferrando.UI.WinForms.Controles
 
@@ -290,4 +291,101 @@ Public Class UIThemeHelper
         End If
     End Sub
 
+    ''' <summary>
+    ''' Applies Disabled styling to a button (e.g. inactive Prev/Next pager buttons).
+    ''' </summary>
+    Public Shared Sub ApplyDisabled(btn As Control)
+        If btn Is Nothing Then Return
+        btn.Cursor = Cursors.Default
+        Dim disBack = Color.FromArgb(248, 250, 252)
+        Dim disFore = Color.FromArgb(170, 185, 195)
+        Dim disBorder = Color.FromArgb(226, 232, 240)
+
+        If TypeOf btn Is FButton Then
+            Dim fb = DirectCast(btn, FButton)
+            fb.BackColor = disBack
+            fb.ForeColor = disFore
+            fb.BorderRadius = 8
+            fb.BorderSize = 1
+            fb.BorderColor = disBorder
+            fb.TextAlign = ContentAlignment.MiddleCenter
+
+            fb.MouseLeaveBackColor = disBack
+            fb.MouseLeaveForeColor = disFore
+            fb.MouseLeaveBorderColor = disBorder
+            fb.MouseLeaveBorderSize = 1
+            fb.MouseLeaveFont = fb.Font
+
+            fb.MouseEnterBackColor = disBack
+            fb.MouseEnterForeColor = disFore
+            fb.MouseEnterBorderColor = disBorder
+            fb.MouseEnterBorderSize = 1
+            fb.MouseEnterFont = fb.Font
+
+            fb.Invalidate()
+        ElseIf TypeOf btn Is Button Then
+            Dim b = DirectCast(btn, Button)
+            b.FlatStyle = FlatStyle.Flat
+            b.BackColor = disBack
+            b.ForeColor = disFore
+            b.FlatAppearance.BorderSize = 1
+            b.FlatAppearance.BorderColor = disBorder
+        End If
+    End Sub
+
+    ''' <summary>
+    ''' Applies styling for numbered pagination buttons (Active Teal or Inactive Outline).
+    ''' </summary>
+    Public Shared Sub ApplyPageNumber(btn As Control, isActive As Boolean)
+        If btn Is Nothing Then Return
+        If isActive Then
+            ApplyPrimary(btn)
+            If TypeOf btn Is FButton Then
+                DirectCast(btn, FButton).BorderRadius = 6
+            End If
+        Else
+            ApplySecondary(btn, activeTealFore:=False)
+            If TypeOf btn Is FButton Then
+                Dim fb = DirectCast(btn, FButton)
+                fb.BorderRadius = 6
+                fb.ForeColor = Color.FromArgb(45, 60, 70)
+                fb.MouseLeaveForeColor = Color.FromArgb(45, 60, 70)
+            End If
+        End If
+    End Sub
+
 End Class
+
+''' <summary>
+''' Reusable anti-aliased pill / badge control for status labels and audit results.
+''' </summary>
+Public Class BadgeLabel
+    Inherits Control
+
+    Public Property FillColor As Color = Color.FromArgb(230, 245, 235)
+
+    Public Sub New()
+        SetStyle(ControlStyles.UserPaint Or ControlStyles.AllPaintingInWmPaint Or
+                 ControlStyles.OptimizedDoubleBuffer Or ControlStyles.ResizeRedraw, True)
+    End Sub
+
+    Protected Overrides Sub OnPaint(e As PaintEventArgs)
+        e.Graphics.Clear(If(Parent IsNot Nothing, Parent.BackColor, Color.White))
+        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias
+
+        Dim d As Integer = Height - 1
+        Using path As New GraphicsPath()
+            path.AddArc(0, 0, d, d, 90, 180)
+            path.AddArc(Width - 1 - d, 0, d, d, 270, 180)
+            path.CloseFigure()
+            Using b As New SolidBrush(FillColor)
+                e.Graphics.FillPath(b, path)
+            End Using
+        End Using
+
+        TextRenderer.DrawText(e.Graphics, Text, Font, New Rectangle(0, 0, Width, Height), ForeColor,
+                              TextFormatFlags.HorizontalCenter Or TextFormatFlags.VerticalCenter Or
+                              TextFormatFlags.NoPadding)
+    End Sub
+End Class
+

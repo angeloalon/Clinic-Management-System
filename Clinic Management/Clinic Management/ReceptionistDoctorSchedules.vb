@@ -133,10 +133,6 @@ Public Class ReceptionistDoctorSchedules
                 })
             End If
         Next
-        If _doctors.Count = 0 Then
-            _doctors.Add(New DoctorInfo With {.Name = "Dr. Elena Cruz", .Role = "General Physician"})
-            _doctors.Add(New DoctorInfo With {.Name = "Dr. Marco Lim", .Role = "General Physician"})
-        End If
         If _selected >= _doctors.Count Then _selected = 0
     End Sub
 

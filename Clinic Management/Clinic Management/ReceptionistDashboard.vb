@@ -929,9 +929,6 @@ Public Class ReceptionistDashboard
     Private Function GetTodayAppointments() As List(Of DashboardAppointment)
         Dim d = Date.Today
         Dim appts = ClinicData.Appointments.Where(Function(a) a.MatchesDate(d)).ToList()
-        If appts.Count = 0 Then
-            appts = ClinicData.Appointments.Where(Function(a) a.Day = 25).ToList()
-        End If
         Return appts.Select(Function(a) New DashboardAppointment With {
             .AppointmentTime = d.AddMinutes(a.Minutes),
             .PatientId = a.PatientId,

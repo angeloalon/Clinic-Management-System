@@ -66,8 +66,9 @@ Public Class DoctorPrescriptionDialog
         End If
 
         ' Archive prescription to SQLite database
-        SqliteConsultationRepository.SavePrescription(_patientId, "Dr. Elena Cruz", _medications, _advice, _drugAllergies)
-        AuditStore.Log("Dr. Elena Cruz", "Doctor", "Prescription generated", $"Prescription issued for {_patientName} ({_patientId})", "Success")
+        Dim docName = If(CurrentUser.IsAuthenticated, CurrentUser.FullName, "Doctor")
+        SqliteConsultationRepository.SavePrescription(_patientId, docName, _medications, _advice, _drugAllergies)
+        AuditStore.Log(docName, "Doctor", "Prescription generated", $"Prescription issued for {_patientName} ({_patientId})", "Success")
 
         Try
             Dim printDoc As New PrintDocument()

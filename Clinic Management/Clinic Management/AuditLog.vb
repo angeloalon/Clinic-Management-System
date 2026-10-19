@@ -17,8 +17,7 @@ Public Class AuditLog
         Public RoleLbl As Label
         Public ActionLbl As Label
         Public DetailsLbl As Label
-        Public Pill As FCard
-        Public ResultLbl As Label
+        Public Pill As BadgeLabel
         Public Divider As Panel
     End Class
 
@@ -33,11 +32,7 @@ Public Class AuditLog
     Private _placeholderOn As Boolean = True
     Private ReadOnly _tip As New ToolTip()
 
-    Private pnlPagination As Panel
-    Private lblPageInfo As Label
-    Private lblPageNum As Label
-    Private btnPrevPage As FButton
-    Private btnNextPage As FButton
+    Private paginationCtrl As PaginationControl
 
     Public Sub New()
         InitializeComponent()
@@ -118,21 +113,11 @@ Public Class AuditLog
                 .AutoEllipsis = True
             }
 
-            r.Pill = New FCard With {
+            r.Pill = New BadgeLabel With {
                 .Location = New Point(698, yPos + 5),
-                .Size = New Size(58, 22),
-                .BorderRadius = 10,
-                .BorderSize = 0,
-                .EnableShadow = False
-            }
-
-            r.ResultLbl = New Label With {
-                .AutoSize = False,
-                .Dock = DockStyle.Fill,
-                .TextAlign = ContentAlignment.MiddleCenter,
+                .Size = New Size(62, 22),
                 .Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
             }
-            r.Pill.Controls.Add(r.ResultLbl)
 
             r.Divider = New Panel With {
                 .Location = New Point(16, yPos + rowH - 1),
@@ -186,63 +171,18 @@ Public Class AuditLog
     End Sub
 
     Private Sub SetupPagination()
-        If pnlPagination IsNot Nothing Then Return
+        If paginationCtrl IsNot Nothing Then Return
 
-        pnlPagination = New Panel With {
+        paginationCtrl = New PaginationControl With {
             .Location = New Point(16, 466),
             .Size = New Size(743, 38),
             .BackColor = Color.White
         }
-
-        lblPageInfo = New Label With {
-            .AutoSize = True,
-            .Font = New Font("Segoe UI", 8.5F),
-            .ForeColor = Hx("#738A94"),
-            .Location = New Point(0, 10),
-            .Text = "Showing 0 of 0 entries"
-        }
-        pnlPagination.Controls.Add(lblPageInfo)
-
-        btnNextPage = New FButton With {
-            .Text = "Next ›",
-            .Size = New Size(70, 26),
-            .Location = New Point(743 - 70, 4),
-            .Font = New Font("Segoe UI", 8.0F, FontStyle.Bold),
-            .Cursor = Cursors.Hand
-        }
-        UIThemeHelper.ApplySecondary(btnNextPage)
-        AddHandler btnNextPage.Click, Sub()
-            _currentPage += 1
-            Refresh_Rows()
-        End Sub
-
-        lblPageNum = New Label With {
-            .AutoSize = False,
-            .Size = New Size(90, 26),
-            .Location = New Point(btnNextPage.Left - 94, 4),
-            .TextAlign = ContentAlignment.MiddleCenter,
-            .Font = New Font("Segoe UI", 8.5F, FontStyle.Bold),
-            .ForeColor = Hx("#1E2D37")
-        }
-
-        btnPrevPage = New FButton With {
-            .Text = "‹ Prev",
-            .Size = New Size(70, 26),
-            .Location = New Point(lblPageNum.Left - 74, 4),
-            .Font = New Font("Segoe UI", 8.0F, FontStyle.Bold),
-            .Cursor = Cursors.Hand
-        }
-        UIThemeHelper.ApplySecondary(btnPrevPage)
-        AddHandler btnPrevPage.Click, Sub()
-            _currentPage -= 1
-            Refresh_Rows()
-        End Sub
-
-        pnlPagination.Controls.Add(btnPrevPage)
-        pnlPagination.Controls.Add(lblPageNum)
-        pnlPagination.Controls.Add(btnNextPage)
-
-        cardActivity.Controls.Add(pnlPagination)
+        AddHandler paginationCtrl.PageChanged, Sub(newPage)
+                                                  _currentPage = newPage
+                                                  Refresh_Rows()
+                                              End Sub
+        cardActivity.Controls.Add(paginationCtrl)
     End Sub
 
     Private Function Ctl(Of T As Control)(name As String) As T
@@ -276,14 +216,8 @@ Public Class AuditLog
 
         _emptyLbl.Visible = (totalCount = 0)
 
-        If pnlPagination IsNot Nothing Then
-            Dim startIdx = If(totalCount = 0, 0, (_currentPage - 1) * PageSize + 1)
-            Dim endIdx = Math.Min(_currentPage * PageSize, totalCount)
-            lblPageInfo.Text = $"Showing {startIdx}–{endIdx} of {totalCount} entries"
-            lblPageNum.Text = $"Page {_currentPage} of {totalPages}"
-            btnPrevPage.Enabled = (_currentPage > 1)
-            btnNextPage.Enabled = (_currentPage < totalPages)
-            pnlPagination.Visible = (totalCount > 0)
+        If paginationCtrl IsNot Nothing Then
+            paginationCtrl.SetPagination(_currentPage, totalPages, totalCount, PageSize, "entries")
         End If
     End Sub
 
@@ -340,23 +274,18 @@ Public Class AuditLog
 
         Select Case result
             Case "Denied"
-                bg = Hx("#FEF3E2") : fg = Hx("#D97706") : w = 54
+                bg = Hx("#FEF3E2") : fg = Hx("#D97706") : w = 58
             Case "Failed"
-                bg = Hx("#FDECEC") : fg = Hx("#CD504B") : w = 50
+                bg = Hx("#FDECEC") : fg = Hx("#CD504B") : w = 54
             Case Else   ' Success
-                bg = Hx("#E6F5EB") : fg = Hx("#28874B") : w = 58
+                bg = Hx("#E6F5EB") : fg = Hx("#28874B") : w = 62
         End Select
 
-        r.Pill.BackColor = bg
-        r.Pill.BorderColor = bg
-        r.Pill.BorderHoverColor = bg
-        r.Pill.HoverTintColor = bg
+        r.Pill.FillColor = bg
+        r.Pill.ForeColor = fg
+        r.Pill.Text = If(String.IsNullOrWhiteSpace(result), "Success", result)
         r.Pill.Width = w
         r.Pill.Location = New Point(698, r.Pill.Location.Y)
-        r.ResultLbl.Width = w
-        r.ResultLbl.BackColor = bg
-        r.ResultLbl.ForeColor = fg
-        r.ResultLbl.Text = result
         r.Pill.Invalidate()
     End Sub
 

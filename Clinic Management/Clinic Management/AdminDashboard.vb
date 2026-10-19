@@ -10,18 +10,6 @@ Public Class AdminDashboard
     Private _firstName As String = "Rosa"
 
     ' ------------------------------------------------------------------
-    '  Sample data (replace with your database later)
-    ' ------------------------------------------------------------------
-    Private ReadOnly _activity As (Text As String, Time As String)() = {
-        ("Dr. Elena Cruz updated her availability", "9:12 AM"),
-        ("Ana Reyes (Receptionist) booked 6 appointments", "8:47 AM"),
-        ("New account created for Mark Tolentino", "Yesterday"),
-        ("Password reset for Dr. Paolo Vega", "Yesterday"),
-        ("Holiday added: All Saints' Day closure", "Sep 27"),
-        ("Failed sign-in attempt for ana.reyes", "Sep 26")
-    }
-
-    ' ------------------------------------------------------------------
     '  Setup
     ' ------------------------------------------------------------------
     Public Sub New()
@@ -60,10 +48,14 @@ Public Class AdminDashboard
         Dim onLeave = StaffStore.Accounts.Where(Function(a) a.Status = "On leave").Count()
         Dim toReview = StaffStore.Accounts.Where(Function(a) a.Status = "Invited" OrElse a.Status = "Suspended").Count()
 
+        Dim allAppts = ClinicData.Appointments
+        Dim todayCount = allAppts.Where(Function(a) a.MatchesDate(DateTime.Today)).Count()
+        Dim pendingCount = allAppts.Where(Function(a) a.Status = "Pending").Count()
+
         lblKpi1Value.Text = activeStaff.ToString()
         lblKpi1Note.Text = $"{StaffStore.Accounts.Count} total accounts"
-        lblKpi2Value.Text = "38"
-        lblKpi2Note.Text = "6 awaiting confirmation"
+        lblKpi2Value.Text = todayCount.ToString()
+        lblKpi2Note.Text = If(pendingCount = 1, "1 awaiting confirmation", $"{pendingCount} awaiting confirmation")
         lblKpi3Value.Text = onLeave.ToString()
         lblKpi3Note.Text = If(onLeave = 1, "1 staff on leave", $"{onLeave} staff on leave")
         lblKpi4Value.Text = toReview.ToString()
@@ -107,44 +99,67 @@ Public Class AdminDashboard
         Dim textFont As New Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Dim timeFont As New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
 
-        Dim y As Integer = 0
-        For Each item In _activity
-            Dim row As New Panel With {
-                .Location = New Point(0, y),
-                .Size = New Size(pnlActivity.Width, RowHeight),
-                .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right,
-                .BackColor = Color.White
+        Dim logs = AuditStore.Entries.Take(6).ToList()
+        If logs.Count = 0 Then
+            Dim lblEmpty As New Label With {
+                .Text = "No recent activity recorded.",
+                .Font = New Font("Segoe UI", 9.0F, FontStyle.Regular),
+                .ForeColor = Color.FromArgb(140, 155, 165),
+                .TextAlign = ContentAlignment.MiddleCenter,
+                .Size = New Size(pnlActivity.Width, 50),
+                .Location = New Point(0, 14),
+                .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
             }
+            pnlActivity.Controls.Add(lblEmpty)
+        Else
+            Dim y As Integer = 0
+            For Each log In logs
+                Dim row As New Panel With {
+                    .Location = New Point(0, y),
+                    .Size = New Size(pnlActivity.Width, RowHeight),
+                    .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right,
+                    .BackColor = Color.White
+                }
 
-            row.Controls.Add(New Label With {
-                .AutoSize = True,
-                .BackColor = Color.White,
-                .Font = textFont,
-                .ForeColor = Color.FromArgb(45, 60, 70),
-                .Location = New Point(6, 14),
-                .Text = item.Text
-            })
+                Dim summary = $"{log.UserName} ({log.Role}) • {log.Action}"
+                If Not String.IsNullOrWhiteSpace(log.Details) Then
+                    summary &= ": " & log.Details
+                End If
 
-            Dim timeW As Integer = TextRenderer.MeasureText(item.Time, timeFont).Width
-            row.Controls.Add(New Label With {
-                .AutoSize = True,
-                .BackColor = Color.White,
-                .Font = timeFont,
-                .ForeColor = Color.FromArgb(135, 148, 158),
-                .Location = New Point(row.Width - timeW - 8, 14),
-                .Anchor = AnchorStyles.Top Or AnchorStyles.Right,
-                .Text = item.Time
-            })
+                row.Controls.Add(New Label With {
+                    .AutoSize = False,
+                    .AutoEllipsis = True,
+                    .BackColor = Color.White,
+                    .Font = textFont,
+                    .ForeColor = Color.FromArgb(45, 60, 70),
+                    .Location = New Point(6, 14),
+                    .Size = New Size(Math.Max(50, row.Width - 90), 18),
+                    .Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right,
+                    .Text = summary
+                })
 
-            row.Controls.Add(New Panel With {
-                .Dock = DockStyle.Bottom,
-                .Height = 1,
-                .BackColor = Color.FromArgb(242, 244, 247)
-            })
+                Dim timeStr = If(log.Time.Date = DateTime.Today, log.Time.ToString("h:mm tt"), log.Time.ToString("MMM d"))
+                Dim timeW As Integer = TextRenderer.MeasureText(timeStr, timeFont).Width
+                row.Controls.Add(New Label With {
+                    .AutoSize = True,
+                    .BackColor = Color.White,
+                    .Font = timeFont,
+                    .ForeColor = Color.FromArgb(135, 148, 158),
+                    .Location = New Point(row.Width - timeW - 8, 14),
+                    .Anchor = AnchorStyles.Top Or AnchorStyles.Right,
+                    .Text = timeStr
+                })
 
-            pnlActivity.Controls.Add(row)
-            y += RowHeight
-        Next
+                row.Controls.Add(New Panel With {
+                    .Dock = DockStyle.Bottom,
+                    .Height = 1,
+                    .BackColor = Color.FromArgb(242, 244, 247)
+                })
+
+                pnlActivity.Controls.Add(row)
+                y += RowHeight
+            Next
+        End If
 
         pnlActivity.ResumeLayout()
     End Sub

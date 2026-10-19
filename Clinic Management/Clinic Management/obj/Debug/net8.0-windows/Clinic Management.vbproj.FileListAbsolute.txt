@@ -285,3 +285,78 @@ C:\Users\Jared Jake Salas\Downloads\Clinic Management-20261019T014701Z-1-001\Cli
 C:\Users\Jared Jake Salas\Downloads\Clinic Management-20261019T014701Z-1-001\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorConsultationDirectory.resources
 C:\Users\Jared Jake Salas\Downloads\Clinic Management-20261019T014701Z-1-001\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ClinicCalendarView.resources
 C:\Users\Jared Jake Salas\Downloads\Clinic Management-20261019T014701Z-1-001\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistAppointment.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Data\clinic.db
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Clinic Management.exe
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Clinic Management.deps.json
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Clinic Management.runtimeconfig.json
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Clinic Management.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Clinic Management.pdb
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Ferrando.UI.WinForms.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-riscv64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.vbproj.AssemblyReference.cache
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.AddUser.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.AdminDashboard.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.AdminFormSidebar.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.AuditLog.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ClinicCalendarView.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ClinicSettings.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorAppointment.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorConsultation.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorConsultationDirectory.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorDashboard.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorLaboratoryDialog.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorPatientInformation.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorPatients.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorReports.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorShell.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.DoctorsSchedule.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.LoginForm.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistAppointment.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistBookAppointmentDialog.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistClinicReports.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistConsultation.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistConsultationDetail.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistDashboard.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistDoctorSchedules.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistPatientInformation.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistPatients.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.ReceptionistRegisterPatient.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic_Management.UserManagement.resources
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.vbproj.GenerateResource.cache
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.AssemblyInfoInputs.cache
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.AssemblyInfo.vb
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.vbproj.CoreCompileInputs.cache
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.sourcelink.json
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic M.1C953017.Up2Date
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\refint\Clinic Management.dll
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.pdb
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\Clinic Management.genruntimeconfig.cache
+D:\Download\ClinicManagements\Clinic Management\Clinic Management\obj\Debug\net8.0-windows\ref\Clinic Management.dll

@@ -405,36 +405,3 @@ Public Class UserManagement
 
 End Class
 
-' ----------------------------------------------------------------------
-'  Small rounded status pill
-' ----------------------------------------------------------------------
-Friend Class BadgeLabel
-    Inherits Control
-
-    Public Property FillColor As Color = Color.FromArgb(230, 245, 235)
-
-    Public Sub New()
-        SetStyle(ControlStyles.UserPaint Or ControlStyles.AllPaintingInWmPaint Or
-                 ControlStyles.OptimizedDoubleBuffer Or ControlStyles.ResizeRedraw, True)
-    End Sub
-
-    Protected Overrides Sub OnPaint(e As PaintEventArgs)
-        e.Graphics.Clear(If(Parent IsNot Nothing, Parent.BackColor, Color.White))
-        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias
-
-        Dim d As Integer = Height - 1
-        Using path As New GraphicsPath()
-            path.AddArc(0, 0, d, d, 90, 180)
-            path.AddArc(Width - 1 - d, 0, d, d, 270, 180)
-            path.CloseFigure()
-            Using b As New SolidBrush(FillColor)
-                e.Graphics.FillPath(b, path)
-            End Using
-        End Using
-
-        TextRenderer.DrawText(e.Graphics, Text, Font, New Rectangle(0, 0, Width, Height), ForeColor,
-                              TextFormatFlags.HorizontalCenter Or TextFormatFlags.VerticalCenter Or
-                              TextFormatFlags.NoPadding)
-    End Sub
-End Class
-

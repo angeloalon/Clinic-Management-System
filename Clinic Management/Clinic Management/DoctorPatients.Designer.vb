@@ -1,4 +1,4 @@
-﻿Imports FontAwesome.Sharp
+Imports FontAwesome.Sharp
 Imports Ferrando.UI.WinForms.Controles
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>

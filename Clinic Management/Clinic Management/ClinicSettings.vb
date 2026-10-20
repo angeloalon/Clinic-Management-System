@@ -53,13 +53,33 @@ Public Class ClinicSettings
 
     ' ------------------------------------------------------------------ data
 
-    Private Sub LoadProfile()
+    Public Sub LoadProfile()
         txtClinicName.Text = ClinicProfile.ClinicName
         txtClinicType.Text = ClinicProfile.ClinicType
         txtAddress.Text = ClinicProfile.Address
         txtContact.Text = ClinicProfile.Contact
         txtEmail.Text = ClinicProfile.Email
         txtApptLength.Text = ClinicProfile.ApptMinutes & " minutes"
+
+        txtClinicName.Modified = False
+        txtClinicType.Modified = False
+        txtAddress.Modified = False
+        txtContact.Modified = False
+        txtEmail.Modified = False
+        txtApptLength.Modified = False
+    End Sub
+
+    Public Function HasUnsavedChanges() As Boolean
+        Return txtClinicName.Modified OrElse txtClinicType.Modified OrElse txtAddress.Modified OrElse
+               txtContact.Modified OrElse txtEmail.Modified OrElse txtApptLength.Modified OrElse
+               txtClinicName.Focused OrElse txtClinicType.Focused OrElse txtAddress.Focused OrElse
+               txtContact.Focused OrElse txtEmail.Focused OrElse txtApptLength.Focused
+    End Function
+
+    Public Sub RefreshIfClean()
+        If Not HasUnsavedChanges() Then
+            LoadProfile()
+        End If
     End Sub
 
     Private Sub Save_Click(sender As Object, e As EventArgs)

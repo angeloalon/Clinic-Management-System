@@ -350,6 +350,12 @@ Public Class DoctorPatientInformation
     ''' <summary>
     ''' Loads and displays patient information dynamically by ID with high-contrast WCAG styling.
     ''' </summary>
+    Public Sub RefreshCurrentPatient()
+        If Not String.IsNullOrEmpty(_currentPatientId) Then
+            LoadPatientData(_currentPatientId)
+        End If
+    End Sub
+
     Public Sub LoadPatientData(patientId As String)
         _currentPatientId = patientId
         Dim p = PatientRepository.GetById(patientId)

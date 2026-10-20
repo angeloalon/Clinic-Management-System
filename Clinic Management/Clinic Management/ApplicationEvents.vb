@@ -11,19 +11,6 @@ Namespace My
 
     ' **NEW** ApplyApplicationDefaults: Raised when the application queries default values to be set for the application.
 
-    ' Example:
-    ' Private Sub MyApplication_ApplyApplicationDefaults(sender As Object, e As ApplyApplicationDefaultsEventArgs) Handles Me.ApplyApplicationDefaults
-    '
-    '   ' Setting the application-wide default Font:
-    '   e.Font = New Font(FontFamily.GenericSansSerif, 12, FontStyle.Regular)
-    '
-    '   ' Setting the HighDpiMode for the Application:
-    '   e.HighDpiMode = HighDpiMode.PerMonitorV2
-    '
-    '   ' If a splash dialog is used, this sets the minimum display time:
-    '   e.MinimumSplashScreenDisplayTime = 4000
-    ' End Sub
-
     Partial Friend Class MyApplication
 
         Private Sub MyApplication_Startup(sender As Object, e As StartupEventArgs) Handles Me.Startup
@@ -102,7 +89,15 @@ Namespace My
                 File.WriteAllText(outPath, sb.ToString())
                 Console.WriteLine(sb.ToString())
                 e.Cancel = True
+                Return
             End If
+
+            ' Start centralized system-wide auto-synchronization background service (1.5s interval)
+            DataSyncService.Start()
+        End Sub
+
+        Private Sub MyApplication_Shutdown(sender As Object, e As EventArgs) Handles Me.Shutdown
+            DataSyncService.Stop()
         End Sub
 
     End Class

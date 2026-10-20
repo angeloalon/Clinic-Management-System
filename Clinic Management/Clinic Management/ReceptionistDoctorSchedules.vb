@@ -122,6 +122,13 @@ Public Class ReceptionistDoctorSchedules
                                            End Sub
     End Sub
 
+    Public Sub RefreshSchedule()
+        LoadDoctors()
+        BuildDoctorPicker()
+        SyncSlotsFromClinicData()
+        RenderWeek()
+    End Sub
+
     Private Sub LoadDoctors()
         _doctors.Clear()
         Dim staffDocs = StaffStore.Doctors

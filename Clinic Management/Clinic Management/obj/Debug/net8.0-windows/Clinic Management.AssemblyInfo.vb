@@ -15,7 +15,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Clinic Management"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e825c76d8b4d4710a451b3c4d9bdf8c74e95fae"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5584d9abf228a716ef2a486910e40de792c7bfee"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Clinic Management"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Clinic Management"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

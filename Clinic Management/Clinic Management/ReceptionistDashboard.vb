@@ -361,6 +361,59 @@ Public Class ReceptionistDashboard
     ' =====================================================================
     '  Page switching
     ' =====================================================================
+    Public Sub RefreshDashboardView()
+        If pnlDashboard IsNot Nothing AndAlso pnlDashboard.Visible Then
+            LoadDashboard(GetTodayAppointments(), GetRecentPatients(), 11)
+            BindScheduleRows()
+        End If
+    End Sub
+
+    Public Sub RefreshPatientsView()
+        If patientsPanel IsNot Nothing Then
+            Dim pList = GetPatients()
+            patientsPanel.LoadPatients(pList, pList.Count, preservePage:=True)
+        End If
+    End Sub
+
+    Public Sub RefreshForSync(domains As SyncDomain)
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Patients)) <> 0 Then
+            RefreshDashboardView()
+        End If
+        If (domains And SyncDomain.Patients) <> 0 Then
+            RefreshPatientsView()
+        End If
+        If (domains And (SyncDomain.Patients Or SyncDomain.Appointments Or SyncDomain.Consultations)) <> 0 Then
+            If patientInfoPanel IsNot Nothing AndAlso patientInfoPanel.Visible Then
+                patientInfoPanel.RefreshCurrentPatient()
+            End If
+        End If
+        If (domains And SyncDomain.Appointments) <> 0 Then
+            If appointmentPanel IsNot Nothing Then
+                appointmentPanel.RefreshData()
+            End If
+        End If
+        If (domains And (SyncDomain.Schedules Or SyncDomain.Appointments Or SyncDomain.Staff)) <> 0 Then
+            If doctorSchedulesPanel IsNot Nothing Then
+                doctorSchedulesPanel.RefreshSchedule()
+            End If
+        End If
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Consultations)) <> 0 Then
+            If consultationListPanel IsNot Nothing Then
+                consultationListPanel.RefreshRows()
+            End If
+        End If
+        If (domains And (SyncDomain.Consultations Or SyncDomain.Appointments)) <> 0 Then
+            If consultationDetailPanel IsNot Nothing AndAlso consultationDetailPanel.Visible Then
+                consultationDetailPanel.RefreshAccessState()
+            End If
+        End If
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Consultations Or SyncDomain.Patients)) <> 0 Then
+            If clinicReportsPanel IsNot Nothing Then
+                clinicReportsPanel.RefreshReportData()
+            End If
+        End If
+    End Sub
+
     Private Sub ShowDashboard()
         LoadDashboard(GetTodayAppointments(), GetRecentPatients(), 11)   ' reload so KPIs are fresh
         ShowPage(pnlDashboard, btnDashboard)

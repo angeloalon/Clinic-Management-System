@@ -1,8 +1,9 @@
 === DATABASE PATH ===
 D:\Download\ClinicManagements\Clinic Management\Clinic Management\Data\clinic.db
 === TABLES & ROW COUNTS ===
+_sync_version: 1 rows
 appointments: 0 rows
-audit_logs: 0 rows
+audit_logs: 12 rows
 clinic_settings: 0 rows
 consultation_access_requests: 0 rows
 consultations: 0 rows
@@ -14,5 +15,6 @@ prescriptions: 0 rows
 psgc_geographic: 0 rows
 schedule_slots: 0 rows
 staff_accounts: 1 rows
+sync_change_log: 4 rows
 === STAFF ACCOUNTS ===
-ID=6 | Email=rosa.delacruz@uccclinic.edu.ph | Name=Rosa Dela Cruz | Role=Administrator | Status=Active | Code= | Failed=0 | Locked= | LastActive=Today, 17:24 | Archived=0 | HashLen=44 | SaltLen=24
+ID=6 | Email=rosa.delacruz@uccclinic.edu.ph | Name=Rosa Dela Cruz | Role=Administrator | Status=Active | Code= | Failed=0 | Locked= | LastActive=Today, 09:53 | Archived=0 | HashLen=44 | SaltLen=24

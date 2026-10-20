@@ -174,7 +174,7 @@ Public Class DoctorsSchedule
         Next
     End Sub
 
-    Private Sub RenderSlots()
+    Public Sub RenderSlots()
         If lblWeekRange IsNot Nothing Then
             lblWeekRange.Text = $"{_currentWeekMonday:MMM dd} – {_currentWeekMonday.AddDays(4):MMM dd, yyyy}"
         End If

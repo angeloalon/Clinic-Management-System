@@ -1,6 +1,35 @@
 Public Class AdminFormSidebar
     Private sidebarHandler As SidebarHandler
 
+    Private _dashForm As AdminDashboard
+    Private _usersForm As UserManagement
+    Private _settingsForm As ClinicSettings
+    Private _auditForm As AuditLog
+
+    Private _dashPage As Control
+    Private _usersPage As Control
+    Private _settingsPage As Control
+    Private _auditPage As Control
+
+    ''' <summary>
+    ''' Targeted refresh handler called by DataSyncService when background sync detects changes.
+    ''' </summary>
+    Public Sub RefreshForSync(domains As SyncDomain)
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Staff Or SyncDomain.Audit)) <> 0 Then
+            If _dashForm IsNot Nothing Then _dashForm.RefreshDashboard()
+        End If
+        If (domains And SyncDomain.Staff) <> 0 Then
+            If _usersForm IsNot Nothing Then _usersForm.RefreshData()
+        End If
+        If (domains And SyncDomain.Settings) <> 0 Then
+            If _settingsForm IsNot Nothing Then _settingsForm.RefreshIfClean()
+            Label2.Text = " " & ClinicProfile.ClinicName
+        End If
+        If (domains And SyncDomain.Audit) <> 0 Then
+            If _auditForm IsNot Nothing Then _auditForm.Refresh_Rows()
+        End If
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FitToScreen()
 
@@ -8,6 +37,8 @@ Public Class AdminFormSidebar
             txtName.Text = CurrentUser.FullName
             txtRole.Text = CurrentUser.RoleDisplay
         End If
+
+        Label2.Text = " " & ClinicProfile.ClinicName
 
         ' Sidebar now has 4 items:
         '   btnDashboard      = "Dashboard"
@@ -17,44 +48,45 @@ Public Class AdminFormSidebar
         sidebarHandler = New SidebarHandler(btnDashboard, btnUserManagement, btnClinicSettings, btnAudit)
 
         ' build each page once
-        Dim dashForm As New AdminDashboard()
-        Dim dash As Control = MakePage(dashForm)
-        Dim usersForm As New UserManagement()
-        Dim users As Control = MakePage(usersForm)
-        Dim settingsForm As New ClinicSettings()
-        Dim settings As Control = MakePage(settingsForm)
-        Dim audit As Control = MakePage(New AuditLog())
+        _dashForm = New AdminDashboard()
+        _dashPage = MakePage(_dashForm)
+        _usersForm = New UserManagement()
+        _usersPage = MakePage(_usersForm)
+        _settingsForm = New ClinicSettings()
+        _settingsPage = MakePage(_settingsForm)
+        _auditForm = New AuditLog()
+        _auditPage = MakePage(_auditForm)
 
-        AddHandler settingsForm.SettingsSaved, Sub()
+        AddHandler _settingsForm.SettingsSaved, Sub()
                                                    Label2.Text = " " & ClinicProfile.ClinicName
                                                End Sub
 
         ' Wire dashboard shortcut to User management
-        AddHandler dashForm.NavigateUsersRequested, Sub()
-                                                        If Not ConfirmDiscardWizard() Then Return
-                                                        sidebarHandler.SetActive(btnUserManagement)
-                                                        usersForm.RefreshData()
-                                                        ShowPage(users)
-                                                    End Sub
+        AddHandler _dashForm.NavigateUsersRequested, Sub()
+                                                         If Not ConfirmDiscardWizard() Then Return
+                                                         sidebarHandler.SetActive(btnUserManagement)
+                                                         _usersForm.RefreshData()
+                                                         ShowPage(_usersPage)
+                                                     End Sub
 
         ' Wire edit user action
-        AddHandler usersForm.EditUserRequested,
+        AddHandler _usersForm.EditUserRequested,
             Sub(email As String)
                 Dim acc = StaffStore.FindByEmail(email)
                 If acc Is Nothing Then Return
                 Using dlg As New EditUserDialog(acc.Name, acc.Email, acc.Role, acc.Status, acc.Clinic)
                     If dlg.ShowDialog(Me) = DialogResult.OK Then
                         If dlg.WasArchived Then
-                            usersForm.RefreshData()
-                            dashForm.RefreshDashboard()
+                            _usersForm.RefreshData()
+                            _dashForm.RefreshDashboard()
                             Return
                         End If
                         acc.Role = dlg.UpdatedRole
                         acc.Status = dlg.UpdatedStatus
                         acc.Clinic = dlg.UpdatedClinic
                         SqliteStaffRepository.UpdateAccount(acc.Email, dlg.UpdatedRole, dlg.UpdatedStatus, dlg.UpdatedClinic)
-                        usersForm.RefreshData()
-                        dashForm.RefreshDashboard()
+                        _usersForm.RefreshData()
+                        _dashForm.RefreshDashboard()
                         AuditStore.Log(CurrentUser.FullName, CurrentUser.Role, "User edited", $"{acc.Name} ({acc.Role}, {acc.Status})", "Success")
                     End If
                 End Using
@@ -62,21 +94,21 @@ Public Class AdminFormSidebar
 
         AddHandler btnDashboard.Click, Sub()
                                            If Not ConfirmDiscardWizard() Then Return
-                                           dashForm.RefreshDashboard()
-                                           ShowPage(dash)
+                                           _dashForm.RefreshDashboard()
+                                           ShowPage(_dashPage)
                                        End Sub
         AddHandler btnUserManagement.Click, Sub()
                                                 If Not ConfirmDiscardWizard() Then Return
-                                                usersForm.RefreshData()
-                                                ShowPage(users)
+                                                _usersForm.RefreshData()
+                                                ShowPage(_usersPage)
                                             End Sub
         AddHandler btnClinicSettings.Click, Sub()
                                                 If Not ConfirmDiscardWizard() Then Return
-                                                ShowPage(settings)
+                                                ShowPage(_settingsPage)
                                             End Sub
         AddHandler btnAudit.Click, Sub()
                                        If Not ConfirmDiscardWizard() Then Return
-                                       ShowPage(audit)
+                                       ShowPage(_auditPage)
                                    End Sub
 
         ' Profile card can also trigger logout / sign out
@@ -88,7 +120,7 @@ Public Class AdminFormSidebar
         txtRole.Cursor = Cursors.Hand
 
         sidebarHandler.SetActive(btnDashboard)   ' start on Dashboard
-        ShowPage(dash)
+        ShowPage(_dashPage)
         LayoutSidebarBottom()
     End Sub
 

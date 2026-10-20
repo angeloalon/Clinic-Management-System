@@ -251,6 +251,183 @@ Public Class DatabaseInitializer
 
         ' Normalize all patient and appointment names to Proper Case if any exist
         NormalizeExistingPatientNames(conn, tx)
+
+        ' Initialize system-wide auto-synchronization version tracking and triggers
+        InitializeSyncVersionAndTriggers(conn, tx)
+    End Sub
+
+    Private Shared Sub InitializeSyncVersionAndTriggers(conn As SqliteConnection, tx As SqliteTransaction)
+        Dim syncDdl As String = "
+            CREATE TABLE IF NOT EXISTS _sync_version (
+                id INTEGER PRIMARY KEY CHECK (id = 1),
+                global_version INTEGER NOT NULL DEFAULT 1,
+                patients_version INTEGER NOT NULL DEFAULT 1,
+                appointments_version INTEGER NOT NULL DEFAULT 1,
+                consultations_version INTEGER NOT NULL DEFAULT 1,
+                prescriptions_version INTEGER NOT NULL DEFAULT 1,
+                schedules_version INTEGER NOT NULL DEFAULT 1,
+                staff_version INTEGER NOT NULL DEFAULT 1,
+                settings_version INTEGER NOT NULL DEFAULT 1,
+                audit_version INTEGER NOT NULL DEFAULT 1,
+                updated_at TEXT NOT NULL DEFAULT (datetime('now', 'localtime'))
+            );
+
+            INSERT OR IGNORE INTO _sync_version (id, global_version, patients_version, appointments_version, consultations_version, prescriptions_version, schedules_version, staff_version, settings_version, audit_version, updated_at)
+            VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, datetime('now', 'localtime'));
+
+            INSERT OR IGNORE INTO clinic_settings (id, clinic_name, clinic_type, address, contact, email, appt_minutes)
+            VALUES (1, 'UCC Health Clinic', 'General practice', 'Health Clinic, Caloocan City', '(02) 8555 0142', 'clinic@uccclinic.edu.ph', 30);
+
+            -- Patients Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_pat_ins AFTER INSERT ON patients
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, patients_version = patients_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_pat_upd AFTER UPDATE ON patients
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, patients_version = patients_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_pat_del AFTER DELETE ON patients
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, patients_version = patients_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Appointments Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_appt_ins AFTER INSERT ON appointments
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, appointments_version = appointments_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_appt_upd AFTER UPDATE ON appointments
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, appointments_version = appointments_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_appt_del AFTER DELETE ON appointments
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, appointments_version = appointments_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Consultations & Access Requests Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_cons_ins AFTER INSERT ON consultations
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_cons_upd AFTER UPDATE ON consultations
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_cons_del AFTER DELETE ON consultations
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_car_ins AFTER INSERT ON consultation_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_car_upd AFTER UPDATE ON consultation_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_car_del AFTER DELETE ON consultation_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, consultations_version = consultations_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Prescriptions, Access Requests & Lab Requests Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_rx_ins AFTER INSERT ON prescriptions
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_rx_upd AFTER UPDATE ON prescriptions
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_rx_del AFTER DELETE ON prescriptions
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_par_ins AFTER INSERT ON prescription_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_par_upd AFTER UPDATE ON prescription_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_par_del AFTER DELETE ON prescription_access_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_lab_ins AFTER INSERT ON lab_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_lab_upd AFTER UPDATE ON lab_requests
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, prescriptions_version = prescriptions_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Schedules & Doctor Availability Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_avail_ins AFTER INSERT ON doctor_availability
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_avail_upd AFTER UPDATE ON doctor_availability
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_avail_del AFTER DELETE ON doctor_availability
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_slots_ins AFTER INSERT ON schedule_slots
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_slots_upd AFTER UPDATE ON schedule_slots
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_slots_del AFTER DELETE ON schedule_slots
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, schedules_version = schedules_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Staff Accounts Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_staff_ins AFTER INSERT ON staff_accounts
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, staff_version = staff_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_staff_upd AFTER UPDATE ON staff_accounts
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, staff_version = staff_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_staff_del AFTER DELETE ON staff_accounts
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, staff_version = staff_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Clinic Settings Triggers
+            CREATE TRIGGER IF NOT EXISTS trg_sync_set_ins AFTER INSERT ON clinic_settings
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, settings_version = settings_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+            CREATE TRIGGER IF NOT EXISTS trg_sync_set_upd AFTER UPDATE ON clinic_settings
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, settings_version = settings_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+
+            -- Audit Logs Trigger
+            CREATE TRIGGER IF NOT EXISTS trg_sync_aud_ins AFTER INSERT ON audit_logs
+            BEGIN
+                UPDATE _sync_version SET global_version = global_version + 1, audit_version = audit_version + 1, updated_at = datetime('now', 'localtime') WHERE id = 1;
+            END;
+        "
+
+        Using cmd = conn.CreateCommand()
+            cmd.Transaction = tx
+            cmd.CommandText = syncDdl
+            cmd.ExecuteNonQuery()
+        End Using
     End Sub
 
     Private Shared Sub NormalizeExistingPatientNames(conn As SqliteConnection, tx As SqliteTransaction)

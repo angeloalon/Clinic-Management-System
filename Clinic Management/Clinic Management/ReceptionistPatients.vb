@@ -78,12 +78,14 @@ Public Class ReceptionistPatients
     ' =====================================================================
 
     ''' <summary>Loads the patient list. totalCount = total registered patients (defaults to list size).</summary>
-    Public Sub LoadPatients(patients As IEnumerable(Of PatientRecord), Optional totalCount As Integer = 0)
+    Public Sub LoadPatients(patients As IEnumerable(Of PatientRecord), Optional totalCount As Integer = 0, Optional preservePage As Boolean = False)
         allPatients = patients.ToList()
         registeredTotal = If(totalCount > 0, totalCount, allPatients.Count)
         lblHeaderSubtitle.Text = String.Format(CultureInfo.InvariantCulture,
             "{0:N0} registered patients {1} Single clinic record", registeredTotal, Bullet)
-        _currentPage = 1
+        If Not preservePage Then
+            _currentPage = 1
+        End If
         ApplyFilters()
     End Sub
 

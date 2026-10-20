@@ -96,6 +96,49 @@ Public Class DoctorShell
     ' Public Navigation Hub
     ' =========================================================================
 
+    Public Sub RefreshForSync(domains As SyncDomain)
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Consultations Or SyncDomain.Patients)) <> 0 Then
+            If _dashboardView IsNot Nothing AndAlso Not _dashboardView.IsDisposed Then
+                _dashboardView.RefreshDashboard()
+            End If
+        End If
+        If (domains And SyncDomain.Patients) <> 0 Then
+            If _patientsView IsNot Nothing AndAlso Not _patientsView.IsDisposed Then
+                _patientsView.RefreshPatientsList()
+            End If
+        End If
+        If (domains And (SyncDomain.Patients Or SyncDomain.Consultations Or SyncDomain.Prescriptions)) <> 0 Then
+            If _patientInfoView IsNot Nothing AndAlso Not _patientInfoView.IsDisposed Then
+                _patientInfoView.RefreshCurrentPatient()
+            End If
+        End If
+        If (domains And SyncDomain.Appointments) <> 0 Then
+            If _appointmentView IsNot Nothing AndAlso Not _appointmentView.IsDisposed Then
+                _appointmentView.RefreshData()
+            End If
+        End If
+        If (domains And (SyncDomain.Schedules Or SyncDomain.Appointments)) <> 0 Then
+            If _scheduleView IsNot Nothing AndAlso Not _scheduleView.IsDisposed Then
+                _scheduleView.RenderSlots()
+            End If
+        End If
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Consultations)) <> 0 Then
+            If _consultationDirectoryView IsNot Nothing AndAlso Not _consultationDirectoryView.IsDisposed Then
+                _consultationDirectoryView.RefreshRows()
+            End If
+        End If
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Patients Or SyncDomain.Prescriptions)) <> 0 Then
+            If _consultationView IsNot Nothing AndAlso Not _consultationView.IsDisposed Then
+                _consultationView.RefreshIfClean()
+            End If
+        End If
+        If (domains And (SyncDomain.Appointments Or SyncDomain.Consultations Or SyncDomain.Prescriptions)) <> 0 Then
+            If _reportsView IsNot Nothing AndAlso Not _reportsView.IsDisposed Then
+                _reportsView.RefreshReportData()
+            End If
+        End If
+    End Sub
+
     Public Sub NavigateTo(tab As DoctorTab)
         _currentTab = tab
 

@@ -311,7 +311,7 @@ Public Class DoctorPatients
         }
     End Function
 
-    Private Sub RefreshPatientsList()
+    Public Sub RefreshPatientsList()
         Dim currentDoc = If(CurrentUser.IsAuthenticated, CurrentUser.FullName, "Dr. Elena Cruz")
         Dim all = PatientRepository.GetPatientsForDoctor(currentDoc)
 

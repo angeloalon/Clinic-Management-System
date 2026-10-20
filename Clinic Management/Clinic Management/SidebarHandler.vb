@@ -1,4 +1,4 @@
-﻿Imports Ferrando.UI.WinForms.Controles
+Imports Ferrando.UI.WinForms.Controles
 
 Public Class SidebarHandler
 

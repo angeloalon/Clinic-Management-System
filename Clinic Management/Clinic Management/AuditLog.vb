@@ -193,7 +193,7 @@ Public Class AuditLog
 
     ' ------------------------------------------------------------------ rows
 
-    Private Sub Refresh_Rows()
+    Public Sub Refresh_Rows()
         Dim term As String = If(_placeholderOn, "", txtSearch.Text.Trim())
 
         _filtered = AuditStore.Entries.Where(Function(a) Matches(a, term)) _

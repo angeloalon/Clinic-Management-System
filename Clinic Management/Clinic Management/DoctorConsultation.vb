@@ -91,6 +91,22 @@ Public Class DoctorConsultation
         Next
     End Sub
 
+    Public Function HasUnsavedChanges() As Boolean
+        Return txtSymptoms.Modified OrElse txtDiagnosis.Modified OrElse txtMedication.Modified OrElse txtAdvice.Modified OrElse
+               txtSymptoms.Focused OrElse txtDiagnosis.Focused OrElse txtMedication.Focused OrElse txtAdvice.Focused
+    End Function
+
+    Public Sub RefreshIfClean()
+        If Not HasUnsavedChanges() AndAlso _item IsNot Nothing Then
+            Dim allAppts = ClinicData.Appointments
+            Dim updatedAppt = allAppts.FirstOrDefault(Function(a) a.Id = _item.Id OrElse (Not String.IsNullOrEmpty(a.AppointmentId) AndAlso a.AppointmentId = _item.AppointmentId))
+            If updatedAppt IsNot Nothing Then
+                _item = updatedAppt
+                ApplyVitals(_item.Bp, _item.Pulse, _item.Temperature, _item.Spo2)
+            End If
+        End If
+    End Sub
+
     Private Sub PositionDynamicLabels()
         If _item Is Nothing Then Return
         lblPatientAllergy.Left = lblPatientAgeSex.Right + 16

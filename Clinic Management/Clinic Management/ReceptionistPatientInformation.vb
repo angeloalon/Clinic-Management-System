@@ -35,6 +35,14 @@ Public Class ReceptionistPatientInformation
     ' ============================================================
     '  Public API
     ' ============================================================
+    Public Sub RefreshCurrentPatient()
+        If _details IsNot Nothing AndAlso Not String.IsNullOrEmpty(_details.PatientId) Then
+            Dim savedScroll = pnlScroll.AutoScrollPosition
+            LoadPatient(_details.PatientId)
+            pnlScroll.AutoScrollPosition = New Point(-savedScroll.X, -savedScroll.Y)
+        End If
+    End Sub
+
     Public Sub LoadPatient(patientId As String)
         _details = GetPatientDetails(patientId)
         _visits = GetPatientVisits(patientId).OrderByDescending(Function(v) v.VisitDate).ToList()
